@@ -1,0 +1,53 @@
+header {
+    background-color: #193047;
+    padding: 10px;
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 10;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    inset: 30px 0 auto;
+}
+
+.Logo {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.header-buttons button {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btnGTA {
+    background-color: #bb2075;
+}
+
+.btnPS5 {
+    background-color: #1a73e8;
+}
+
+.btnEstrenos {
+    background-color: #1d7d11;
+}
+
+body {
+    position: relative;
+    padding: 80px 0 0 0;
+}
