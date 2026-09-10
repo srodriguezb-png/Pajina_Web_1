@@ -1,24 +1,32 @@
+:root {
+    --header-color: #193047;
+    --button-text: #fff;
+    --button-radius: 8px;
+    --button-gap: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding-top: 90px;
+}
+
 header {
-    background-color: #193047;
-    padding: 10px;
     position: fixed;
-    inset: 0 0 auto 0;
+    inset: 0 0 auto;
     z-index: 10;
+    padding: 10px;
+    background-color: var(--header-color);
 }
 
 .header-content {
     display: flex;
     align-items: center;
-    gap: 20px;
-}
-
-.header-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    position: absolute;
-    inset: 30px 0 auto;
+    gap: var(--button-gap);
 }
 
 .Logo {
@@ -27,12 +35,26 @@ header {
     object-fit: cover;
 }
 
+.header-buttons {
+    position: absolute;
+    inset: 30px 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: var(--button-gap);
+}
+
 .header-buttons button {
-    color: #fff;
-    border: none;
     padding: 10px 20px;
-    border-radius: 8px;
+    color: var(--button-text);
+    border: none;
+    border-radius: var(--button-radius);
     cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.header-buttons button:hover {
+    opacity: 0.8;
+    transform: scale(1.08);
 }
 
 .btnGTA {
@@ -45,9 +67,4 @@ header {
 
 .btnEstrenos {
     background-color: #1d7d11;
-}
-
-body {
-    position: relative;
-    padding: 80px 0 0 0;
 }
