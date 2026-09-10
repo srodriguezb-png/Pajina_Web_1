@@ -4,14 +4,12 @@
     --button-radius: 8px;
     --button-gap: 20px;
 }
-
-* {
+*{
     box-sizing: border-box;
 }
-
 body {
     position: relative;
-     background: linear-gradient(135deg, #d6fffc, #eefffe);
+    background: linear-gradient(135deg, #d6fffc, #eefffe);
     margin: 0;
     padding-top: 90px;
 }
@@ -23,7 +21,6 @@ header {
     padding: 10px;
     background-color: var(--header-color);
 }
-
 .header-content {
     display: flex;
     align-items: center;
@@ -71,4 +68,8 @@ header {
 }
 .btnConsecuencias{
     background-color: #bb2075;
+}
+.imghacker{
+    width: 800px;
+    height: auto;
 }
