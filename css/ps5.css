@@ -1,0 +1,25 @@
+.ps5-emulatorImg {
+    width: 50%;
+    height: auto;
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: var(--header-color);
+    font-size: 2rem;
+}
+
+.perroHack {
+    width: 20%;
+    height: auto;
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+}
+
+div {
+    margin: 0 20px;
+}

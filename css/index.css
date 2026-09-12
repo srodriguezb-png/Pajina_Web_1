@@ -4,16 +4,20 @@
     overflow: auto;
 }
 
+div {
+    margin: 0 20px;
+}
+
 .ResumenesGTA img,
 .ResumenesPS5 img,
 .ResumenesEstrenos img {
     float: left;
-    width: 40%;
+    width: 20%;
     margin: 0 20px 10px 0;
 }
 
 h1 {
     text-align: center;
     color: var(--header-color);
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
